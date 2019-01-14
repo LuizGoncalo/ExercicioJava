@@ -1,0 +1,83 @@
+Respostas 
+
+1 = A - Servlet é uma classe do Java que possibilita ampliar os recursos de servidores web, 
+		desenvolvida para permitir conteúdos dinâmicos orientados ao usuário.
+
+2 = D - Jetty.
+
+3 = C - Beans, Servlets e JSP.
+
+4 = B - I e II, apenas.
+
+5 = B - A injeção de dependência é feita após a criação do objeto,
+		por meio dos métodos set de uma classe no estilo JavaBean, 
+		e não no momento da criação do objeto, tendo-se em vista que passar muitos argumentos no construtor pode tornar-se dispendioso.
+
+6 = C - Certo
+
+7 = E – Errado
+
+8 : 
+
+public class Soma {
+
+	public static void main(String[] args) {
+		
+		int numeroA;
+		int numeroB;
+		int numeroC;
+		String aux;
+		String auxA;
+		String auxB;
+		String auxC;
+		
+		
+		numeroA = 10256;
+		numeroB = 512;
+		auxC = "";
+		numeroC = 0;
+		
+		
+		aux = Integer.toString(numeroA) + Integer.toString(numeroB);
+		auxA = Integer.toString(numeroA);
+		auxB = Integer.toString(numeroB);
+		
+			
+        auxC = auxC + auxA.charAt(0);        
+		
+		
+		for (int i = 0; i == aux.length(); i++) {			
+			
+			if (i < auxA.length()) {
+	        auxC += auxA.charAt(i);
+	        }
+			if(i < auxB.length()) {
+	        auxC += auxB.charAt(i);	        
+	        }
+		}
+
+		numeroC = Integer.parseInt(auxC);	
+		
+	}
+
+}
+
+
+9 :
+
+private int soma; //variavel usada na soma
+
+
+public  int somaNo(BinaryTree b) {
+		this.soma = this.soma + (b.valor);
+		
+		if (b.left != null) {
+			somaNo(b.left);
+		}
+		if (b.right != null) {
+			somaNo(b.right);
+		}
+		
+		return this.soma;
+	}
+
